@@ -1,29 +1,34 @@
 /********** Common CSS Starts **********/  
+/********** Common CSS Starts **********/
 * {
-     margin:0px;
-     padding:0px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
- html, body {
-     font-family Roboto, sans-serif, arial;
-     font-size: 14px;
-     color: #242424;
+
+html, body {
+  font-family: Roboto, sans-serif, Arial;
+  font-size: 14px;
+  color: #242424;
 }
- .container {
-     width: 1000px;
-     margin:0 px auto;
-    float: center;
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
 }
- .main-section {
-     width: 100%;
-     float: left;
-     padding:50px 0px 40px 0px;
+
+.main-section {
+  width: 100%;
+  float: left;
+  padding: 50px 0 40px 0;
 }
- .heading {
-     font-size: 22px;
-     font-weight: 500;
-     border-bottom: 1px solid #ff5722;
-     margin-bottom:25px;
-     color: #ff5722;
+
+.heading {
+  font-size: 22px;
+  font-weight: 500;
+  border-bottom: 1px solid #ff5722;
+  margin-bottom: 25px;
+  color: #ff5722;
 }
 /********** Common CSS Ends **********/
 
@@ -94,6 +99,20 @@ nav ul {
   margin: 0;
   padding:0;
   list-style: none;
+}
+nav {
+  width: 100%;
+  float: left;
+  background: #ff5722;
+  padding: 15px 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 17px;
+  border-right: 1px solid #ffc3c3;
+  padding: 2px 20px;
 }
 .nav a {
   display:block; 
@@ -365,38 +384,67 @@ nav ul {
 }
 /********** Placement CSS Ends **********/
 
-/********** Footer CSS Starts **********/  
+/********** Footer CSS Starts **********/
 .footer {
-     background-color:#1f2836;
-     padding:70px 0px;
-     width:100%;
-     float:left;
+  background-color: #1f2836;
+  padding: 70px 0;
+  width: 100%;
+  float: left;
 }
- .footer-sect {
-     width:33%;
-     float:left;
+
+.footer-sect {
+  width: 33%;
+  float: left;
 }
- .footer-sect h2 {
-     color:#fff;
-     margin-bottom: 20px;
+
+.footer-sect h2 {
+  color: #fff;
+  margin-bottom: 20px;
 }
- .footer-sect p {
-     color: #fff;
-     line-height: 22px;
-     padding:0px 30px 20px 0px;
+
+.footer-sect p {
+  color: #fff;
+  line-height: 22px;
+  padding: 0 30px 20px 0;
 }
- .footer-menu li {
-     width: 50%;
-     float: left;
-     margin-bottom: 10px;
+
+.footer-menu li {
+  width: 50%;
+  float: left;
+  margin-bottom: 10px;
 }
- .footer-menu li a {
-     color:#fff;
-     text-decoration: none;
+
+.footer-menu li a {
+  color: #fff;
+  text-decoration: none;
 }
- .footer-contact li {
-     margin-bottom:15px;
-     list-style: none;
-     color: #fff;
+
+.footer-contact li {
+  margin-bottom: 15px;
+  list-style: none;
+  color: #fff;
 }
+
 /********** Footer CSS Ends **********/
+
+/* Media Queries for Responsive Design */
+
+/* Small screens (phones) */
+@media only screen and (max-width: 768px) {
+  /* Adjust styles for small screens here */
+  nav a {
+      padding: 2px 10px; /* Decrease padding for links in the navigation menu */
+  }
+
+  /* Add more adjustments as needed */
+}
+
+/* Medium screens (tablets) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  /* Adjust styles for medium screens here */
+  nav a {
+      padding: 2px 15px; /* Adjust padding for links in the navigation menu */
+  }
+
+  /* Add more adjustments as needed */
+}
